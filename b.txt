@@ -1,0 +1,23 @@
+git push origin master
+
+cd D:
+cd www
+mkdir testgit
+cd testgit
+pwd
+
+git init
+git add readme.txt
+git commit -m "readme.txt提交"
+git status
+git diff readme.txt
+git commit -m "文件增加222222内容"
+git commit -m "添加readme.txt文件内容为333333"
+git log
+git log --pretty=oneline
+git reset  -hard HEAD^^
+git reset  -hard HEAD~100
+cat readme.txt
+git reflog
+git reset  --hard 6fcfc89
+git checkout  --readme.txt,
