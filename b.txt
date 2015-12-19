@@ -1,4 +1,37 @@
-git push origin master
+git push origin master    上传
+
+git clone https://github.com/y504995896/testgit3 下载
+
+git checkout -b dev
+
+git branch dev
+git checkout dev
+git branch
+
+git add readme.txt
+git commit -m "dev分支上增加内容77777"
+git checkout master
+git merge dev --no-ff -m "merge with no-ff" dev
+git branch -d dev
+git checkout -b fenzhi1
+git commit -m "添加内容88888"
+git checkout master
+git commit -m "在master分支上新增内容aaaaaaa"
+git merge fenzhi1
+git status
+cat readme.txt
+git commit -m "conflict fixed 分支修复"
+
+git stash
+
+git log --graph --pretty=oneline --abbrev-commit
+
+查看分支：git branch
+创建分支：git branch name
+切换分支：git checkout name
+创建+切换分支：git checkout -b name
+合并某分支到当前分支：git merge name
+删除分支：git branch -d name
 
 cd D:
 cd www
@@ -20,4 +53,4 @@ git reset  -hard HEAD~100
 cat readme.txt
 git reflog
 git reset  --hard 6fcfc89
-git checkout  --readme.txt,
+git checkout  --readme.txt
